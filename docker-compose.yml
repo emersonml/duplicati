@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    image: lscr.io/linuxserver/duplicati:latest
+    container_name: duplicati
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=Etc/UTC
+      - CLI_ARGS= # opcional, adicione argumentos de linha de comando se necessário
+    volumes:
+      - /volumes/duplicati/app/config/_data:/config
+      - /backups/duplicati:/backups
+      - /volumes:/source
+    ports:
+      - 8200:8200
+    restart: unless-stopped
