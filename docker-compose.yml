@@ -6,7 +6,7 @@ services:
     hostname: duplicati    
     environment:
       - PUID=1000
-      - PGID=100
+      - PGID=1000
       - TZ=Etc/UTC
       - CLI_ARGS= # opcional, adicione argumentos de linha de comando se necessário
     volumes:
