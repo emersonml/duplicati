@@ -10,9 +10,9 @@ services:
       - TZ=Etc/UTC
       - CLI_ARGS= # opcional, adicione argumentos de linha de comando se necessário
     volumes:
-      - /volumes/duplicati/app/config/_data:/config
-      - /backups/duplicati:/backups
-      - /volumes:/source
+      - /srv/volumes/duplicati/app/config/_data:/config
+      - /srv/backups/duplicati:/backups
+      - /srv/volumes:/source
     ports:
-      - 8200:8200
+      - 9050:8200
     restart: unless-stopped
