@@ -3,6 +3,7 @@ services:
     image: lscr.io/linuxserver/duplicati:latest
     container_name: duplicati-app
     hostname: duplicati-app
+      #user: ${PUID}:${PGID}
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -10,9 +11,12 @@ services:
       - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY}
       - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI__WEBSERVICE_PASSWORD}
     volumes:
-      - ${SOURCE_DIR}/duplicati:/data
+      - duplicati-data:/data
       - ${DESTINO_DIR}:/backups
-      - ${SOURCE_DIR}:/volumes
+      - ${SOURCE_DIR}:/volumes:ro
     ports:
       - 8200:8200
     restart: unless-stopped
+
+volumes:
+  duplicati-data:
