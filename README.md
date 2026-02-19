@@ -1,15 +1,15 @@
-# 1. Criar grupo e usuário do sistema
-sudo groupadd -g 1100 duplicati
-sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati
+sudo groupadd -g 1100 duplicati-data
+sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati-data
 
-# 2. Ajustar permissões dos volumes
+sudo chown root:1100 /srv/docker/volumes; sudo chmod 751 /srv/docker/volumes
+sudo chown 1100:1100 /srv/backups; sudo chmod 750 /srv/backups
 
-sudo chown :1100 /srv/docker/volumes; sudo chmod 751 /srv/docker/volumes
-sudo chown 1100:emerson /srv/backups; sudo chmod 750 /srv/backups
+# Volume nomeado (duplicati-data)  precisa de escrita
+docker volume inspect duplicati_duplicati-data
+# verifique o Mountpoint e ajuste se necessário:
+sudo chown -R 1100:1100 /var/lib/docker/volumes/duplicati_duplicati-data/_data
 
 
-
-# 3. Para /srv/volumes (source), adicione apenas leitura
 
 
 #Recomendação adicional: Considere usar UIDs/GIDs na faixa 1000-2000 para serviços, mantendo separação clara dos usuários normais do sistema.

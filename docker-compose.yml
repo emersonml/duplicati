@@ -1,22 +1,22 @@
 services:
   duplicati-app:
-    image: duplicati/duplicati
+    image: lscr.io/linuxserver/duplicati:latest
     container_name: duplicati-app
     hostname: duplicati-app
+      #user: ${PUID}:${PGID}
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
       - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY}
-      - CLI_ARGS= #optional
       - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI__WEBSERVICE_PASSWORD}
     volumes:
-      - duplicati-data:/data                    # Volume nomeado para dados do app
-      - ${DESTINO_DIR}:/destino                  # Bind mount para backups
-      - ${SOURCE_DIR}:/source:ro                   # Bind mount para dados fonte
+      - duplicati-data:/data
+      - ${DESTINO_DIR}:/backups
+      - ${SOURCE_DIR}:/volumes:ro
     ports:
       - 8200:8200
     restart: unless-stopped
 
 volumes:
-  duplicati-data:  # Nome do volume = duplicati-data
+  duplicati-data:
