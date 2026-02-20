@@ -10,7 +10,7 @@ services:
       - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY}
       - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI__WEBSERVICE_PASSWORD}
     volumes:
-      - ${SOURCE_DIR}/duplicati:/data
+      - ${SOURCE_DIR}/duplicati:/config
       - ${DESTINO_DIR}:/backups
       - ${SOURCE_DIR}:/volumes
     ports:

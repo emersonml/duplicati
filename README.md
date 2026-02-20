@@ -13,3 +13,5 @@ sudo chown -R 1100:1100 /var/lib/docker/volumes/duplicati_duplicati-data/_data
 
 
 #Recomendação adicional: Considere usar UIDs/GIDs na faixa 1000-2000 para serviços, mantendo separação clara dos usuários normais do sistema.
+
+
