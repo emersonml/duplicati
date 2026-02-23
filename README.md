@@ -1,8 +1,10 @@
 sudo groupadd -g 1100 duplicati-data
 sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati-data
 
+#volumes
 sudo chown root:1100 /srv/docker/volumes; sudo chmod 751 /srv/docker/volumes
-sudo chown 1100:1100 /srv/backups; sudo chmod 750 /srv/backups
+#backups
+sudo chown -R 1100:1100 /srv/backups; sudo chmod -R 750 /srv/backups
 
 # Volume nomeado (duplicati-data)  precisa de escrita
 docker volume inspect duplicati_duplicati-data
