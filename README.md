@@ -1,3 +1,7 @@
+# Antes de subir, gere o .env com:
+echo "DOCKER_GID=$(getent group docker | cut -d: -f3)" >> .env
+
+
 sudo groupadd -g 1100 duplicati-data
 sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati-data
 

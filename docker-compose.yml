@@ -3,15 +3,18 @@ services:
     image: lscr.io/linuxserver/duplicati:latest
     container_name: duplicati-app
     hostname: duplicati-app
+    # group_add:
+    #   - "${DOCKER_GID}"
     environment:
       - PUID=${PUID}
-      - PGID=${PGID}
+      - PGID=984
       - TZ=${TZ}
       - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY}
       - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI__WEBSERVICE_PASSWORD}
       - CLI_ARGS=--tempdir=/tmp/duplicati --asynchronous-upload-folder=/tmp/duplicati --skip-metadata=true
     volumes:
-      - ${SOURCE_DIR}/duplicati:/config
+      - ${SOURCE_DIR}/duplicati/config:/config
+      - /var/run/docker.sock:/var/run/docker.sock
       - ${SOURCE_DIR}/duplicati/tmp:/tmp/duplicati  # pasta dedicada ao temp
       - ${DESTINO_DIR}:/backups
       - ${SOURCE_DIR}:/volumes
