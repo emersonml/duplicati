@@ -1,12 +1,26 @@
-# Antes de subir, gere o .env com:
-echo "DOCKER_GID=$(getent group docker | cut -d: -f3)" >> .env
+#!/bin/sh
+chmod -R 777 /tmp/duplicati
+
+chown root:1100 /srv/docker
+chown root:1100 /srv/docker/volumes; chmod 751 /srv/docker/volumes;
+chown -R :1100  /srv/docker/volumes/nextcloud_*; chmod 751                                        
+
+
+
+
+
 
 
 sudo groupadd -g 1100 duplicati-data
 sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati-data
 
-#volumes
-sudo chown root:1100 /srv/docker/volumes; sudo chmod 751 /srv/docker/volumes
+# Identifique o id do grupo docker para adicionar no custom-cont-:
+getent group docker | cut -d: -f3
+
+#volumes PERMISSAO para backups e restore
+sudo setfacl -R -m u:1100:rwx /srv/docker/volumes/nextcloud_*
+sudo setfacl -R -m d:u:1100:rwx /srv/docker/volumes/nextcloud_*
+
 #backups
 sudo chown -R 1100:1100 /srv/backups; sudo chmod -R 750 /srv/backups
 

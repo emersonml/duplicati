@@ -7,13 +7,14 @@ services:
     #   - "${DOCKER_GID}"
     environment:
       - PUID=${PUID}
-      - PGID=984
+      - PGID=${PGID}
       - TZ=${TZ}
       - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY}
       - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI__WEBSERVICE_PASSWORD}
       - CLI_ARGS=--tempdir=/tmp/duplicati --asynchronous-upload-folder=/tmp/duplicati --skip-metadata=true
     volumes:
-      - ${SOURCE_DIR}/duplicati/config:/config
+      # - ${SOURCE_DIR}/duplicati/config:/config
+      - ./volumes/config:/config
       - /var/run/docker.sock:/var/run/docker.sock
       - ${SOURCE_DIR}/duplicati/tmp:/tmp/duplicati  # pasta dedicada ao temp
       - ${DESTINO_DIR}:/backups

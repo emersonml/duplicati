@@ -1,0 +1,12 @@
+#!/bin/sh
+exec > /config/scripts/debug-pre-backup.log 2>&1
+echo "Iniciando debug-pre-backup"
+echo "PATH: $PATH"
+which curl
+curl --version
+echo "Testando socket..."
+curl -v --unix-socket /var/run/docker.sock -X POST "http://localhost/v1.44/containers/nextcloud-app/stop"
+curl -s --unix-socket /var/run/docker.sock -X POST "http://localhost/v1.44/containers/nextcloud-redis0/stop"
+curl -s --unix-socket /var/run/docker.sock -X POST "http://localhost/v1.44/containers/nextcloud-db/stop"
+
+echo "Exit code: $?"
