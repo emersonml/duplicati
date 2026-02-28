@@ -14,7 +14,7 @@ services:
       - CLI_ARGS=--tempdir=/tmp/duplicati --asynchronous-upload-folder=/tmp/duplicati --skip-metadata=true
     volumes:
       # - ${SOURCE_DIR}/duplicati/config:/config
-      - ./volumes/config:/config
+      #- ./volumes/config:/config
       - /var/run/docker.sock:/var/run/docker.sock
       - ${SOURCE_DIR}/duplicati/tmp:/tmp/duplicati  # pasta dedicada ao temp
       - ${DESTINO_DIR}:/backups
