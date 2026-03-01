@@ -1,5 +1,6 @@
 sudo groupadd -g 1100 duplicati
 sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati
+sudo usermod -aG volumes duplicati
 
 # BACKUPS
 sudo chown -R 1100:1100 /srv/backups; sudo chmod -R 750 /srv/backups
