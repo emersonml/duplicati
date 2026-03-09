@@ -1,0 +1,46 @@
+[2026-03-09 16:09:11] === Iniciando pre-backup nextcloud data ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removed 
+[2026-03-09 16:09:23] === Pre-backup data concluído ===
+[2026-03-09 16:09:56] === Iniciando pre-backup nextcloud data ===
+[2026-03-09 16:10:01] === Pre-backup data concluído ===
+[2026-03-09 16:10:50] === Iniciando pre-backup nextcloud data ===
+[2026-03-09 16:10:55] === Pre-backup data concluído ===
+[2026-03-09 16:12:34] === Iniciando pre-backup nextcloud data ===
+[2026-03-09 16:12:40] === Pre-backup data concluído ===
+[2026-03-09 16:13:44] === Iniciando pre-backup nextcloud data ===
+[2026-03-09 16:13:49] === Pre-backup data concluído ===
+[2026-03-09 16:13:50] === Iniciando pre-backup nextcloud data ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+[2026-03-09 16:13:59] === Iniciando pre-backup nextcloud data ===
+ Container nextcloud-db Stopping 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removed 
+[2026-03-09 16:14:06] === Pre-backup data concluído ===
+[2026-03-09 16:14:06] === Pre-backup data concluído ===

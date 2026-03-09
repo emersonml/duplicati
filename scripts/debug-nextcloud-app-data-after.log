@@ -1,0 +1,54 @@
+[2026-03-09 16:12:40] === Iniciando pos-backup nextcloud data ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 16:12:41] === Pos-backup data concluído ===
+[2026-03-09 16:13:49] === Iniciando pos-backup nextcloud data ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-db Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 16:13:50] === Pos-backup data concluído ===
+[2026-03-09 16:14:06] === Iniciando pos-backup nextcloud data ===
+[2026-03-09 16:14:06] === Iniciando pos-backup nextcloud data ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-db Error response from daemon: Conflict. The container name "/nextcloud-db" is already in use by container "bd85d51dfe5fe51417ed7d902b926aee40574039ba0be54f58b7730d7a478f44". You have to remove (or rename) that container to be able to reuse that name. 
+Error response from daemon: Conflict. The container name "/nextcloud-db" is already in use by container "bd85d51dfe5fe51417ed7d902b926aee40574039ba0be54f58b7730d7a478f44". You have to remove (or rename) that container to be able to reuse that name.
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+[2026-03-09 16:14:07] === Pos-backup data concluído ===
+ Container nextcloud-redis0 Started 
+ Container nextcloud-db Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 16:14:07] === Pos-backup data concluído ===

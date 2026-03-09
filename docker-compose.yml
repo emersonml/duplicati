@@ -3,23 +3,23 @@ services:
     image: lscr.io/linuxserver/duplicati:latest
     container_name: duplicati-app
     hostname: duplicati-app
-    # user: "1100:1100"+-
-    # group_add:
-    #   - "${DOCKER_GID}"
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
       - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY}
       - DUPLICATI__WEBSERVICE_PASSWORD=${DUPLICATI__WEBSERVICE_PASSWORD}
-      - CLI_ARGS=--tempdir=/tmp/duplicati --asynchronous-upload-folder=/tmp/duplicati --skip-metadata=true
+      - DOCKER_MODS=linuxserver/mods:universal-docker  # ← adiciona docker cli + permissão no socket
+      - CLI_ARGS=--tempdir=/tmp/duplicati --asynchronous-upload-folder=/tmp/duplicati
+      #- CLI_ARGS=--tempdir=/tmp/duplicati --asynchronous-upload-folder=/tmp/duplicati --skip-metadata=true
     volumes:
-      # - ${SOURCE_DIR}/duplicati/config:/config
-      - ./volumes/config:/config
+      - ./config:/config
+      - ./scripts:/scripts
       - /var/run/docker.sock:/var/run/docker.sock
       - ${SOURCE_DIR}/duplicati/tmp:/tmp/duplicati  # pasta dedicada ao temp
-      - ${DESTINO_DIR}:/destino  # pasta de destino para os backups
-      - ${SOURCE_DIR}:/source  # pasta de origem para os backups
+      - ${DESTINO_DIR}:/backups  # pasta de destino para os backups
+      - ${SOURCE_DIR}:/source/volumes  
+      - ${STAGING_DIR}:/source/staging 
     ports:
       - 8200:8200
     restart: unless-stopped

@@ -1,0 +1,5 @@
+dd69517a6dfd4b5c8f528d1a5c1e9f03
+
+This file is used to track the number of unique installs.
+The first line in the file is used as an ID, which is sent to the server when checking for updates.
+If the first line is blank, this installation will not be part of the usage statistics.

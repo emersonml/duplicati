@@ -1,22 +1,40 @@
+sudo chown :volumes /srv/docker/volumes && sudo chmod 751 /srv/docker/volumes
+
+
+
 sudo groupadd -g 1100 duplicati
 sudo useradd -u 1100 -g 1100 -r -s /usr/sbin/nologin duplicati
-sudo usermod -aG volumes duplicati
+
+
+# PROJECTS
+.env
+chown -R 1100:1100 /opt/projects/duplicati/config
+  chown -R 1100:1100 /opt/projects/duplicati/scripts
 
 # BACKUPS
 sudo chown -R 1100:1100 /srv/backups; sudo chmod -R 750 /srv/backups
 
 # VOLUMES
-#systemctl status restaura-permissoes.service ## executa os scripts para volumes
+systemctl status restaura-permissoes.service ## executa os scripts para volumes
 
 # SCRIPTS
   ## permissoes volumes 
-#/etc/scripts/restaura_permissoes.sh 
+/etc/scripts/restaura_permissoes.sh 
   ## jobs de backups 
-sudo chown -R :1100 /opt/projects/duplicati/volumes
+sudo chown -R :1100 /opt/projects/duplicati/volumes/scripts
+
+
+# dcd
+  ## VOLUMES
+  sudo chown -R :1100 /srv/docker/volumes/duplicati; sudo chmod -R 770 /srv/docker/volumes/duplicati
 
 
 
 
+CONFIGS PARA JOB NEXTCLOUD:
+[[.*mariadb-bin.*][.*ib_buffer_pool.*][.*ib_logfile.*][.*ibdata.*][.*aria_log.*]]
+
+run-script-before-required: /scripts/nextcloud-pre-backup.sh
 
 
 # ==== BOM SABER
@@ -27,3 +45,5 @@ docker cp $(which busybox) portainer-app:/busybox
 
 # 2. Executar o busybox como shell
 docker exec -it portainer-app /busybox sh
+
+

@@ -1,0 +1,195 @@
+[2026-03-09 14:54:52] === Iniciando pos-backup nextcloud config ===
+/bin/bash: /etc/scripts/nextcloud-after.sh: No such file or directory
+[2026-03-09 14:54:52] ERRO: falha ao subir nextcloud!
+[2026-03-09 15:51:31] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 15:51:31] === Pos-backup config concluído ===
+[2026-03-09 15:54:07] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 15:54:08] === Pos-backup config concluído ===
+[2026-03-09 15:54:25] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-db Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 15:54:26] === Pos-backup config concluído ===
+[2026-03-09 15:54:42] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 15:54:43] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-db Error response from daemon: Conflict. The container name "/nextcloud-db" is already in use by container "e273d0b1273904f991ec6f0a55d52dccbeb7de8fa26de05e86bef81f37b5c98f". You have to remove (or rename) that container to be able to reuse that name. 
+Error response from daemon: Conflict. The container name "/nextcloud-db" is already in use by container "e273d0b1273904f991ec6f0a55d52dccbeb7de8fa26de05e86bef81f37b5c98f". You have to remove (or rename) that container to be able to reuse that name.
+ Container nextcloud-app Created 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+[2026-03-09 15:54:43] === Pos-backup config concluído ===
+ Container nextcloud-redis0 Started 
+ Container nextcloud-db Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 15:54:44] === Pos-backup config concluído ===
+[2026-03-09 15:55:00] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 15:55:00] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 15:55:00] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 15:55:00] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Network nextcloud_network Error Error response from daemon: network with name nextcloud_network already exists
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Error response from daemon: Conflict. The container name "/nextcloud-db" is already in use by container "c8171f54cd6b79b0805b513be9f5346ad9812924096b6250dcc991b3c3f35b4c". You have to remove (or rename) that container to be able to reuse that name. 
+Error response from daemon: Conflict. The container name "/nextcloud-db" is already in use by container "c8171f54cd6b79b0805b513be9f5346ad9812924096b6250dcc991b3c3f35b4c". You have to remove (or rename) that container to be able to reuse that name.
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+[2026-03-09 15:55:00] === Pos-backup config concluído ===
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-db Started 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+ Container nextcloud-app Started 
+ Container nextcloud-app Started 
+[2026-03-09 15:55:01] === Pos-backup config concluído ===
+[2026-03-09 15:55:01] === Pos-backup config concluído ===
+[2026-03-09 15:55:01] === Pos-backup config concluído ===
+[2026-03-09 15:55:17] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 15:55:17] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-redis0 Error response from daemon: Conflict. The container name "/nextcloud-redis0" is already in use by container "453cc2089d69673f58efd8f6f4abf6ddfbc30074d5f6640ab80e50d8ad60ca8c". You have to remove (or rename) that container to be able to reuse that name. 
+Error response from daemon: Conflict. The container name "/nextcloud-redis0" is already in use by container "453cc2089d69673f58efd8f6f4abf6ddfbc30074d5f6640ab80e50d8ad60ca8c". You have to remove (or rename) that container to be able to reuse that name.
+ Container nextcloud-app Created 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+[2026-03-09 15:55:18] === Pos-backup config concluído ===
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 15:55:19] === Pos-backup config concluído ===
+[2026-03-09 15:55:36] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 15:55:37] === Pos-backup config concluído ===
+[2026-03-09 16:00:33] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 16:00:33] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+ Container nextcloud-app Started 
+[2026-03-09 16:00:34] === Pos-backup config concluído ===
+[2026-03-09 16:00:34] === Pos-backup config concluído ===
+[2026-03-09 16:00:52] === Iniciando pos-backup nextcloud config ===
+ Network nextcloud_network Creating 
+ Network nextcloud_network Created 
+ Container nextcloud-db Creating 
+ Container nextcloud-redis0 Creating 
+ Container nextcloud-db Created 
+ Container nextcloud-redis0 Created 
+ Container nextcloud-app Creating 
+ Container nextcloud-app Created 
+ Container nextcloud-db Starting 
+ Container nextcloud-redis0 Starting 
+ Container nextcloud-db Started 
+ Container nextcloud-redis0 Started 
+ Container nextcloud-app Starting 
+ Container nextcloud-app Started 
+[2026-03-09 16:00:52] === Iniciando pos-backup nextcloud config ===
+[2026-03-09 16:00:53] === Pos-backup config concluído ===
+ Container nextcloud-redis0 Running 
+ Container nextcloud-db Running 
+ Container nextcloud-app Running 
+[2026-03-09 16:00:53] === Pos-backup config concluído ===

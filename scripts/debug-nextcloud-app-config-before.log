@@ -1,0 +1,204 @@
+[2026-03-09 14:51:54] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removed 
+bash: /etc/scripts/permissoes-vol-nextcloud-app-config_e_data.sh: No such file or directory
+bash: /etc/scripts/nextcloud-after.sh: No such file or directory
+[2026-03-09 14:52:06] ERRO: pre-backup config falhou!
+[2026-03-09 14:54:46] === Iniciando pre-backup nextcloud config ===
+bash: /etc/scripts/permissoes-vol-nextcloud-app-config_e_data.sh: No such file or directory
+bash: /etc/scripts/nextcloud-after.sh: No such file or directory
+[2026-03-09 14:54:52] ERRO: pre-backup config falhou!
+[2026-03-09 15:50:46] === Iniciando pre-backup nextcloud config ===
+[2026-03-09 15:50:51] === Pre-backup config concluído ===
+[2026-03-09 15:54:02] === Iniciando pre-backup nextcloud config ===
+[2026-03-09 15:54:07] === Pre-backup config concluído ===
+[2026-03-09 15:54:08] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removed 
+[2026-03-09 15:54:25] === Pre-backup config concluído ===
+[2026-03-09 15:54:26] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+[2026-03-09 15:54:34] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopping 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removed 
+[2026-03-09 15:54:42] === Pre-backup config concluído ===
+[2026-03-09 15:54:43] === Pre-backup config concluído ===
+[2026-03-09 15:54:45] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+[2026-03-09 15:54:50] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-redis0 Removed 
+[2026-03-09 15:54:53] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-db Stopping 
+[2026-03-09 15:54:54] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-db Stopping 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Container nextcloud-db Removed 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removing 
+ Network nextcloud_network No resource found to remove 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removed 
+ Network nextcloud_network No resource found to remove 
+[2026-03-09 15:55:00] === Pre-backup config concluído ===
+[2026-03-09 15:55:00] === Pre-backup config concluído ===
+[2026-03-09 15:55:00] === Pre-backup config concluído ===
+[2026-03-09 15:55:00] === Pre-backup config concluído ===
+[2026-03-09 15:55:04] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+[2026-03-09 15:55:05] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removed 
+[2026-03-09 15:55:17] === Pre-backup config concluído ===
+[2026-03-09 15:55:17] === Pre-backup config concluído ===
+[2026-03-09 15:55:22] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removed 
+[2026-03-09 15:55:35] === Pre-backup config concluído ===
+[2026-03-09 16:00:00] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Network nextcloud_network Removed 
+[2026-03-09 16:00:09] === Iniciando pre-backup nextcloud config ===
+[2026-03-09 16:00:11] === Pre-backup config concluído ===
+[2026-03-09 16:00:15] === Pre-backup config concluído ===
+[2026-03-09 16:00:34] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+[2026-03-09 16:00:42] === Iniciando pre-backup nextcloud config ===
+ Container nextcloud-app Stopping 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Stopped 
+ Container nextcloud-app Removing 
+ Container nextcloud-app Removed 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-app Removed 
+ Container nextcloud-redis0 Stopping 
+ Container nextcloud-db Stopping 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Stopped 
+ Container nextcloud-redis0 Removing 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-redis0 Removed 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Stopped 
+ Container nextcloud-db Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removing 
+ Container nextcloud-db Removed 
+ Network nextcloud_network Removed 
+[2026-03-09 16:00:51] === Pre-backup config concluído ===
+[2026-03-09 16:00:52] === Pre-backup config concluído ===
